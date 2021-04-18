@@ -27,7 +27,10 @@ public class NaoHabilitado extends EstadoVacinacao {
 		if(status == true) {
 			pessoa.setEstadoVacinacao(new HabilitadaPrimeira(pessoa,governo));
 		}
-		return "pessoa nao apta para tomar primeira vacina.";
+		else {
+			return "pessoa nao apta para tomar primeira vacina.";
+		}
+		return "vacina habilitada";
 	}
 
 	@Override

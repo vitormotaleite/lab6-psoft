@@ -21,10 +21,9 @@ public class Pessoa {
 		super();
 	}
 
-	public Pessoa(EstadoVacinacao estadoVacinacao, String nome, String cpf, String endereco, String cartaoSus,
+	public Pessoa(String nome, String cpf, String endereco, String cartaoSus,
 			String telefone, String email, String profissao, int idade) {
 		super();
-		this.estadoVacinacao = estadoVacinacao;
 		this.nome = nome;
 		this.cpf = cpf;
 		this.endereco = endereco;

@@ -21,7 +21,10 @@ public class PrimeiraDose extends EstadoVacinacao {
 		if(pessoa.getDiasPrimeiraDose() >= 20) {
 			pessoa.setEstadoVacinacao(new HabilitadaSegunda(pessoa,governo));
 		}
-		return "esta pessoa ainda nao pode tomar a segunda vacina";
+		else {
+			return "esta pessoa ainda nao pode tomar a segunda vacina";
+		}
+		return "segunda dose habilitada";
 	}
 
 	@Override
